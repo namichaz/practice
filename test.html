@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <section>
+            <form action="#" id="form">
+                <input type="text" value="word">
+                <input type="submit" value="検索">
+            </form>
+        </section>
+        <p id="output"></p>
+        <script>
+            'use script'
+
+            document.getElementById('form').onsubmit = function() {
+                const search = document.getElementById('form').word.value;
+                document.getElementById('output').textContent = `「${search}」の検索中....`;
+            };
+        </script>
+    </body>
+</html>
